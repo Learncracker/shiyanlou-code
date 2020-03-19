@@ -1,0 +1,16 @@
+import sys              # sys 系统模块
+'''
+定义函数
+'''
+def hours(minutes):
+    if minutes < 0:
+        print("the number can't be negative")
+    else:
+        print("{}H,{}M".format((minutes // 60),(minutes % 60)))
+'''
+处理异常
+'''
+try:
+    hours(sys.argv[1])
+except:
+    print("the parameter is ERROR")
